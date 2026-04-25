@@ -18,9 +18,6 @@
             <h1 class="display-3 fw-bold">Wisata Wonogiri</h1>
             <p class="lead mb-5">Temukan keindahan tersembunyi di Wonogiri.</p>
             <div class="d-flex justify-content-center gap-3">
-                <?php if(isset($_SESSION['login'])): ?>
-                    <a href="api/home.php" class="btn btn-primary btn-lg px-5 rounded-pill">Masuk ke home</a>
-                <?php else: ?>
                     <a href="api/login.php" class="btn btn-primary btn-lg px-5 rounded-pill">Login</a>
                     <a href="api/register.php" class="btn btn-outline-light btn-lg px-5 rounded-pill">Daftar</a>
                 <?php endif; ?>
