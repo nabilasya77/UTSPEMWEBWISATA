@@ -3,7 +3,7 @@ session_start();
 require 'koneksi.php';
 
 if (isset($_SESSION['login'])) {
-    header("Location: api/index.php");
+    header("Location: api/index.html");
     exit;
 }
 

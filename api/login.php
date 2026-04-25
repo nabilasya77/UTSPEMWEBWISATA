@@ -66,7 +66,7 @@ if (isset($_POST['login'])) {
                     </div>
                     <button type="submit" name="login" class="btn w-100 fw-bold text-white mb-3" style="background-color: #498edd;">Masuk</button>
                     
-                    <a href="api/index.php" class="text-decoration-none text-muted"><small>Kembali ke Halaman Awal</small></a>
+                    <a href="api/index.html" class="text-decoration-none text-muted"><small>Kembali ke Halaman Awal</small></a>
                 </form>
             </div>
         </div>
