@@ -1,0 +1,75 @@
+/* --- GLOBAL & UTILITY --- */
+body {
+    background-color: #f8f9fa;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+.bg-primary-dark { background-color: #112a46 !important; }
+.text-primary-dark { color: #112a46 !important; }
+.btn-rounded { border-radius: 20px; }
+
+/* --- INDEX.PHP (LANDING PAGE) --- */
+.bg-landing {
+    background: linear-gradient(rgba(17, 42, 70, 0.8), rgba(17, 42, 70, 0.8)), 
+                url('https://asset.kompas.com/crops/c77BE3vztV_nZbuGYC9o8g2zK_E=/0x0:0x0/750x500/data/photo/2024/01/27/65b5229440479.jpg') center/cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+/* --- LOGIN.PHP --- */
+.login-wrapper { height: 100vh; }
+.login-card { max-width: 400px; border-radius: 15px; }
+
+/* --- HOME.PHP (USER DASHBOARD) --- */
+.bps-stats-container { margin-bottom: 30px; }
+.bps-card {
+    background: linear-gradient(135deg, #1a73e8, #0d47a1);
+    color: white;
+    border-radius: 20px;
+    padding: 30px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+.bps-content { position: relative; z-index: 2; }
+.bps-number { font-size: 3.5rem; font-weight: 800; line-height: 1; }
+.bps-chart-bg {
+    position: absolute;
+    right: -20px;
+    bottom: -20px;
+    opacity: 0.1;
+    z-index: 1;
+    transform: rotate(-15deg);
+}
+.badge-fasilitas {
+    background-color: #e8f0fe;
+    color: #1967d2;
+    font-weight: 500;
+    margin-right: 5px;
+    border-radius: 6px;
+}
+.buku-tamu-card { background-color: #e8f0fe; border-radius: 15px; border: none; }
+.wisata-card .card-text { font-size: 14px; }
+
+/* --- PROFIL.PHP --- */
+.profile-card { border-radius: 15px; overflow: hidden; border: none; }
+.profile-header { background-color: #112a46; height: 100px; }
+.profile-pic {
+    width: 100px; height: 100px; background: white;
+    border-radius: 50%; margin-top: -50px;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 40px; color: #112a46; border: 4px solid white;
+}
+
+/* --- ADMIN DASHBOARD --- */
+.admin-stat-card { transition: transform 0.3s; border: none; }
+.admin-stat-card:hover { transform: translateY(-5px); }
+.admin-form-card { max-width: 800px; }
