@@ -1,12 +1,25 @@
 <?php
-$host = "localhost";
-$user = "root";
-$pass = ""; 
-$db   = "db_wisata";
+$host = ''; 
+$port = 3306; 
+$user = '';
+$pass = '';
+$db   = 'db_wisata';
 
-$koneksi = mysqli_connect($host, $user, $pass, $db);
+$koneksi = mysqli_init();
+mysqli_ssl_set($koneksi, NULL, NULL, NULL, NULL, NULL);
 
-if (!$koneksi) {
+$real_connect = mysqli_real_connect(
+    $koneksi, 
+    $host, 
+    $user, 
+    $pass, 
+    $db, 
+    $port, 
+    NULL, 
+    MYSQLI_CLIENT_SSL
+);
+
+if (!$real_connect) {
     die("Koneksi gagal: " . mysqli_connect_error());
 }
 ?>
